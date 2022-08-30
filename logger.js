@@ -1,7 +1,9 @@
-var url = "http://localhost:8080/logger";
+
 
 function log(message) {
+  console.log(__filename + ': ' + message);
   console.log(message);
+
 }
 
 module.exports.log = log;
